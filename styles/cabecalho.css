@@ -2,11 +2,29 @@
 
 /*conteudo cabeçalho*/
 .cabecalho{
+    position: relative;
     display: flex;
     flex-direction: column;
     font-family: "Poppins",sans-serif;
-    background-color: #405040;
-    height: 500px;
+    min-height: 500px;
+}
+
+.cabecalho .capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.capa{
+    transition: opacity 0.3s ease;
+}
+
+.cabecalho:hover{
+    transition: 0.5s ease-in-out;
+    opacity: 0.8;
 }
 
 .redes p{
@@ -40,8 +58,8 @@
 }
 
 .logo{
-top: 17%;
-left: 9%
+top: 20%;
+left: 7%
 }
 
 .menu-principal{
@@ -105,8 +123,8 @@ left: 9%
 }
 
 .cabecalho-texto p{
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 2.5rem;
+    line-height: 45px;
     font-weight: 300;
     color: #FFF;
     position: absolute;
@@ -114,17 +132,21 @@ left: 9%
     top: 270px;
 }
 
+
+/*conteudo principal da pagina*/
 .categorias{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-end;
     gap: 30px;
 
     color: #FFF;
     text-transform: uppercase;
-    height: 300px;
+    height: 320px;
     background-color: #991018;
+    background-image: url('/assets/img/img11.png');
+    background-size: cover;
 }
 
 
@@ -132,10 +154,13 @@ left: 9%
     line-height: 17px;
     text-align: end;
     width: 50%;
+    padding: 0 1.5rem;
 }
 
 .categorias #texto2{
-    width: 60%;
+    width: 50%;
+    text-align: center;
+    align-self: flex-start;
     font-size: 32px;
     background-color: #404040;
 }
@@ -144,6 +169,7 @@ left: 9%
     line-height: 17px;
     text-align: end;
     width: 25%;
+    padding: 0 1.5rem;
 }
 
 
@@ -190,32 +216,38 @@ left: 9%
 }
 
 
-.texto-manutencao{
+.caixa-manutencao{
+    display: flex;
     width: 100%;
-    height: 320px;
+    min-height: 400px;
     background-color: #405040;
+    
 }
-.caixa{
+
+.triangulo{
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #991018;
-    height: 320px;
-    width: 50%;
-    border-radius: 0px 900px 0px 0px;
-    padding: 60px;
+    background-image: url('/assets/img/triagulo.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 0 20px;
 }
-.texto-manutencao .caixa p{
+
+.caixa-manutencao p{
     color: #FFF;
     font-size: 32px;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 35px;
 }
-.texto-manutencao .caixa span{
+
+.caixa-manutencao span{
     text-transform: uppercase;
     color: #F3CC03;
 }
+
+
 .logo-pequenas{
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -226,7 +258,7 @@ left: 9%
 }
 
 .logo-pequenas{
-    height: 100px;
+    height: 130px;
     width: 100%;
     background-color: #FFF;
 }
@@ -234,4 +266,93 @@ left: 9%
 .logo-pequena{
     height: 100px;
     width: auto;
+}
+
+
+.categoria-servicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "img texto1 texto1"
+    "img texto2 texto2"
+    "img caixa-servicos1 caixa-servicos1"
+    "img caixa-servicos2 caixa-servicos2"
+    "img caixa-servicos3 caixa-servicos3";
+    align-items: first baseline;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    background-color: #405040;
+}
+
+.img{
+    grid-area: img;
+}
+
+.texto1{
+    grid-area: texto1;
+}
+
+.texto2{
+    grid-area: texto2;
+}
+
+#caixa-servicos1{
+    grid-area: caixa-servicos1;
+}
+
+#caixa-servicos2{
+    grid-area: caixa-servicos2;
+}
+
+#caixa-servicos3{
+    grid-area: caixa-servicos3;
+}
+
+.categoria-servicos>img{
+    height: 80px;
+    width: auto;
+}
+
+.categoria-servicos>#texto1{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: end;
+}
+.categoria-servicos>#texto2{
+    width: 100%;
+    height: fit-content;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    background-color: #991018;
+}
+
+.caixas-servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100px;
+    height: 300px;
+}
+
+#caixa-servicos1{
+    align-items: flex-end;
+}
+
+#caixa-servicos2{
+    justify-content:left;
+}
+
+#caixa-servicos1{
+    align-items: flex-end;
+}
+
+.caixa-servicos{
+    height: 80px;
+    width: 500px;
+    background-color: #F3CC03;
 }
