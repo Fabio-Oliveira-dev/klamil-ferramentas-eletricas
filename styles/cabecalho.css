@@ -18,15 +18,6 @@
     z-index: -1;
 }
 
-.capa{
-    transition: opacity 0.3s ease;
-}
-
-.cabecalho:hover{
-    transition: 0.5s ease-in-out;
-    opacity: 0.8;
-}
-
 .redes p{
     color: #FFF;
     text-transform: uppercase;
@@ -52,7 +43,7 @@
 
 .logo{
     position: absolute;
-    height: 150px;
+    height: 130px;
     width: auto;
     text-align: center;
 }
@@ -88,31 +79,40 @@ left: 7%
     display: flex;
     flex-direction: row;
     justify-content: end;
+    outline: none;
 }
 
 .formulario{
     width: 518px;
 }
 
+.formulario-btn{
+    font-size: 14px;
+    width: 55px;
+    height: 35px;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: #404040;
+    border: 1px solid #FFF;
+    
+}
 .formulario-input{
     height: 35px;
     width: 415px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 0 5px;
     border-radius: 5px;
-    border: 2px solid #404040;
-    background-color: transparent ;
+    border: 2px solid #FFF;
+    background: rgba(0, 0, 0, 0.5);
+}
+.formulario-input[placeholder]{
+    color: #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 20px;
 }
 
-.formulario-btn{
-    color: #FFF;
-    width: 60px;
-    height: 35px;
-    background-color: #404040;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 .menu-principal-texto:hover{
     color: #1a2132;
@@ -180,6 +180,7 @@ left: 7%
     background-color: #FFF;
     align-items: center;
     justify-items: center;
+    max-width: 1366px;
     height: 500px;
 }
 
@@ -228,7 +229,7 @@ left: 7%
     width: 50%;
     display: flex;
     align-items: center;
-    background-image: url('/assets/img/triagulo.png');
+    background-image: url('/assets/img/triagulo2.png');
     background-position: right;
     background-repeat: no-repeat;
     padding: 0 20px;
@@ -274,10 +275,10 @@ left: 7%
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "img texto1 texto1"
-    "img texto2 texto2"
-    "img caixa-servicos1 caixa-servicos1"
-    "img caixa-servicos2 caixa-servicos2"
-    "img caixa-servicos3 caixa-servicos3";
+    "texto2 texto2 texto2"
+    "caixa-servicos1 caixa-servicos1 caixa-servicos1"
+    "caixa-servicos2 caixa-servicos2 caixa-servicos2"
+    "caixa-servicos3 caixa-servicos3 caixa-servicos3";
     align-items: first baseline;
     justify-content: space-between;
     height: 500px;
@@ -290,12 +291,14 @@ left: 7%
 }
 
 .texto1{
-    grid-area: texto1;
+    grid-area: texto1; 
 }
+
 
 .texto2{
     grid-area: texto2;
 }
+
 
 #caixa-servicos1{
     grid-area: caixa-servicos1;
@@ -310,18 +313,18 @@ left: 7%
 }
 
 .categoria-servicos>img{
-    height: 80px;
+    height: 110px;
     width: auto;
 }
 
 .categoria-servicos>#texto1{
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #FFF;
-    text-align: end;
+    padding:0 10px;
 }
 .categoria-servicos>#texto2{
-    width: 100%;
+    width: 50%;
     height: fit-content;
     font-size: 32px;
     font-weight: 500;
