@@ -36,20 +36,20 @@
     gap: 30px;
     padding: 0 2.5rem;
     width: 100%;
-    height: 95px;
+    height: 80px;
     background-color: #991018;
     margin-top: 30px;
 }
 
 .logo{
     position: absolute;
-    height: 130px;
+    height: 150px;
     width: auto;
     text-align: center;
 }
 
 .logo{
-top: 20%;
+top: 15%;
 left: 7%
 }
 
@@ -94,8 +94,8 @@ left: 7%
     color: #FFF;
     background-color: #404040;
     border: 1px solid #FFF;
-    
 }
+
 .formulario-input{
     height: 35px;
     width: 415px;
@@ -105,14 +105,13 @@ left: 7%
     border: 2px solid #FFF;
     background: rgba(0, 0, 0, 0.5);
 }
+
 .formulario-input[placeholder]{
     color: #FFF;
     font-size: 14px;
     text-transform: uppercase;
     padding: 0 20px;
 }
-
-
 
 .menu-principal-texto:hover{
     color: #1a2132;
@@ -149,7 +148,6 @@ left: 7%
     background-size: cover;
 }
 
-
 .categorias #texto1{
     line-height: 17px;
     text-align: end;
@@ -173,6 +171,7 @@ left: 7%
 }
 
 
+/*Carões informativos*/
 .cartao-informativo{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -216,9 +215,11 @@ left: 7%
     height: auto;
 }
 
-
+/*Caixa manutenção*/
 .caixa-manutencao{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     min-height: 400px;
     background-color: #405040;
@@ -226,28 +227,36 @@ left: 7%
 }
 
 .triangulo{
-    width: 50%;
+    /* width: 50%;
     display: flex;
     align-items: center;
     background-image: url('/assets/img/triagulo2.png');
     background-position: right;
     background-repeat: no-repeat;
-    padding: 0 20px;
+    padding: 0 20px; */
+    width: 0;
+    height: 0;
+    border-left: 350px solid #991018;
+    border-right: 100px solid transparent;
+    border-bottom: 400px solid #991018;
 }
 
-.caixa-manutencao p{
+.caixa-manutencao #paragrafo-manutencao{
+    width: 340px;
     color: #FFF;
     font-size: 32px;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 35px;
+
+    position: relative;
+    left: -430px;
 }
 
-.caixa-manutencao span{
+.caixa-manutencao #paragrafo-manutencao span{
     text-transform: uppercase;
     color: #F3CC03;
 }
-
 
 .logo-pequenas{
     display: grid;
@@ -269,93 +278,332 @@ left: 7%
     width: auto;
 }
 
-
+/*Categoria serviços*/
 .categoria-servicos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "img texto1 texto1"
-    "texto2 texto2 texto2"
-    "caixa-servicos1 caixa-servicos1 caixa-servicos1"
-    "caixa-servicos2 caixa-servicos2 caixa-servicos2"
-    "caixa-servicos3 caixa-servicos3 caixa-servicos3";
-    align-items: first baseline;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    height: 500px;
-    width: 100%;
+    max-width: 1366;
+    min-height: 690px;
     background-color: #405040;
 }
 
-.img{
-    grid-area: img;
+.categoria-servicos .img{
+    width: 100px;
+    height: auto;
+    position: relative;
+    left: 20px;
+    top: -40px;
 }
 
-.texto1{
-    grid-area: texto1; 
+.caixa-textos-servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 70%;
 }
 
-
-.texto2{
-    grid-area: texto2;
-}
-
-
-#caixa-servicos1{
-    grid-area: caixa-servicos1;
-}
-
-#caixa-servicos2{
-    grid-area: caixa-servicos2;
-}
-
-#caixa-servicos3{
-    grid-area: caixa-servicos3;
-}
-
-.categoria-servicos>img{
-    height: 110px;
-    width: auto;
-}
-
-.categoria-servicos>#texto1{
+.categoria-servicos .caixa-textos-servicos>#texto1{
     font-size: 20px;
     text-transform: uppercase;
     color: #FFF;
-    padding:0 10px;
+    padding:30px 40px;
+    display: flex;
+    align-self: flex-end;
 }
-.categoria-servicos>#texto2{
-    width: 50%;
-    height: fit-content;
-    font-size: 32px;
+
+.categoria-servicos .caixa-textos-servicos>#texto2{
+    font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
-    text-align: center;
     color: #FFF;
+    width: 100%;
     background-color: #991018;
+    padding: 0 50px;
+
+    display: flex;
+    align-self: flex-end;
+}
+
+.categoria-servicos .caixa-textos-servicos>#texto2{
+    display: flex;
+    
 }
 
 .caixas-servicos{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 100px;
-    height: 300px;
+    gap: 30px;
+}
+
+.categoria-servicos .caixa-textos-servicos .caixas-servicos .caixinha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #caixa-servicos1{
-    align-items: flex-end;
+    display: flex;
+    align-self: flex-end;
+    width: 520px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 0px 50px;
+    padding: 15px 0;
+    margin: 0 50px;
+    align-items: center;
+}
+
+#caixa-servicos1 p{
+    color: #FFF;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: end;
+}
+
+#caixinha1{
+    width: 250px;
+    height: 90px;
+    background-color: #991018;
+    position: relative;
+    bottom: -2px;
+    left: 30px;
 }
 
 #caixa-servicos2{
-    justify-content:left;
+    display: flex;
+    align-self: flex-start;
+    width: 520px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 50px 0px;
+    padding: 15px 0;
+    margin: 0 50px;
+    align-items: center;
 }
 
-#caixa-servicos1{
-    align-items: flex-end;
+#caixa-servicos2 p{
+    color: #FFF;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: left;
 }
 
-.caixa-servicos{
+#caixinha2{
+    width: 250px;
+    height: 90px;
+    background-color: #991018;
+    position: relative;
+    bottom: -2px;
+    left: -45px;
+}
+
+#caixa-servicos3{
+    display: flex;
+    align-self: flex-end;
+    width: 520px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 0px 50px;
+    padding: 15px 0;
+    margin: 0 50px;
+    align-items: center;
+}
+
+#caixa-servicos3 p{
+    color: #FFF;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: end;
+}
+
+#caixinha3{
+    width: 250px;
+    height: 90px;
+    background-color: #991018;
+    position: relative;
+    bottom: -2px;
+    left: 30px;
+}
+
+/*Espeço de separação em branco*/
+.separacao{
+    width: 100%;
+    height: 40px;
+    background-color: #FFF;
+}
+
+
+/*Rodape*/
+.rodape{
+    background-color: #991018;
+}
+
+
+/*Titutlo rodape*/
+.cabecalho-rodape{
+    width: 100%;
     height: 80px;
-    width: 500px;
+    background-color: #405040;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.caixa-img{
+    width: 100px;
+    height: 80px;
+    background-color: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-img>img{
+    width: 90px;
+    height: 60px;
+}
+
+.cabecalho-rodape>p{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-left: 40px;
+}
+
+/*Endereço*/
+.endereco{
+    width: 100%;
+    max-height: 300px;
+    background-color: #FFF;
+}
+
+.endereco .endereco-caixa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    width: 100%;
+    min-height: 350px;
+}
+
+.endereco .endereco-caixa>#img{
+    width: 200px;
+    height: 200px;
     background-color: #F3CC03;
+}
+
+.endereco .endereco-caixa>#mapa{
+    
+    border: 1px solid #000;
+}
+
+.endereco .endereco-caixa .endereco-horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.endereco .endereco-caixa .endereco-horarios #paragrafo1{
+    width: 290px;
+    text-align: end;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.endereco .endereco-caixa .endereco-horarios #paragrafo2{
+    width: 200px;
+    text-align: end;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.endereco .endereco-caixa .endereco-horarios #paragrafo3{
+    width: 200px;
+    text-align: end;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.endereco .endereco-caixa .endereco-horarios #logo-cartoes{
+    width: 295px;
+    height: auto;
+}
+.endereco .endereco-caixa .endereco-horarios #paragrafo4{
+    width: 560px;
+    text-align: end;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.endereco .endereco-caixa .endereco-horarios #paragrafo5{
+    width: 200px;
+    text-align: end;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.endereco .endereco-caixa .endereco-horarios #paragrafo6{
+    width: 200px;
+    text-align: end;
+    text-transform: uppercase;
+    color: #000;
+}
+
+/*Atendimento ao cliente*/
+.atendimento-cliente{
+    height: 250px;
+    padding: 20px 50px;
+    line-height: 30px;
+}
+
+.atendimento-cliente #paragrafo1{
+    font-weight: 700;
+}
+
+.atendimento-cliente .paragrafo{
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+/*Plataformas Logo*/
+.plataformas-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+
+.plataformas-logo #logo{
+    position: relative;
+    top: -30px;
+    width: 180px;
+    height: auto;
+}
+
+.desenvolvedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desenvolvedor .paragrafo{
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.desenvolvedor .paragrafo a{
+    text-transform: uppercase;
+    color: #F3CC03;
+}
+
+.desenvolvedor .paragrafo a:hover{
+    color: #404040;
 }

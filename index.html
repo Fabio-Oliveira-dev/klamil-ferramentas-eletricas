@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klamil - Aluguel de Ferramentas Eletricas</title>
+    <title>Klamil - Aluguel de Ferramentas Elétricas</title>
     <link rel="stylesheet" href="./styles/reset.css">
 
     <link rel="stylesheet" href="./styles/cabecalho.css">
@@ -64,6 +64,7 @@
         <section class="cabecalho-texto">
             <p>Locação, Manutenção e<br> Venda de Ferramentas<br> Elétricas</p>
         </section>
+
         <img src="./assets/img/capa2.webp" alt="capa" class="capa">
     </header>
 
@@ -95,14 +96,11 @@
             <button class="carrosel-btn" id="carrosel-btn-avancar" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Avançar</span>
-            </button>
-
-            
+            </button> 
         </section> -->
         
         <!--categorias destacadas-->
         <section class="categorias" id="categorias">
-            
             <p class="texto" id="texto1">Nosso compromisso é oferecer as melhores opções de produtos e serviços aos nossos parceiros e clientes, buscando sempre atender com as melhores marcas, alta qualidade e variedade de equipamentos, ferramentas e acessórios</p>
             
             <h2 class="texto" id="texto2">Categorias destacadas</h2>
@@ -153,12 +151,12 @@
             </div>
         </section>
 
-        <!--texto menutencao-->
+        <!--caixa menutencao-->
         <section class="caixa-manutencao">
-            <div class="triangulo">
-                <p>peças de reposição<br> e manutenção com <br><span>garantia</span></p>
-
-            </div>
+            <div class="triangulo"></div>
+            
+            <p id="paragrafo-manutencao">peças de reposição<br> e manutenção com <br><span>garantia</span></p>
+            
         </section>
 
         <!--logos das marcas-->
@@ -178,45 +176,114 @@
 
         <!--Categoria de serviços-->
         <section class="categoria-servicos">
-            <img src="./assets/img/logo-klamil1.png" alt="logo" class="img">
             
-            <p class="texto1" id="texto1">escolha a categoria que você deseja</p>
-
-            <p class="texto2" id="texto2">categorias de serviços</p>
-
-            <div class="caixas-servicos">
-                <div class="caixa-servicos" id="caixa-servicos1"></div>
-    
-                <div class="caixa-servicos" id="caixa-servicos2"></div>
-    
-                <div class="caixa-servicos" id="caixa-servicos3"></div>
+            <div class="caixa-logo">
+                <img src="./assets/img/logo-klamil1.png" alt="logo" class="img">
             </div>
+            
+            <div class="caixa-textos-servicos">
+                <p class="texto1" id="texto1">escolha a categoria que você deseja</p>
+
+                <p class="texto2" id="texto2">categorias de serviços</p>
+                
+                <div class="caixas-servicos">
+                    <div class="caixa-servicos" id="caixa-servicos1">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea et distinctio error voluptas dolor illum ipsa facere labore iste incidunt, ut veritatis voluptate consequatur!</p>
+
+                        <div class="caixinha" id="caixinha1"><img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FFFFFF/handshake.png" alt="handshake"/></div>
+                    </div>
+        
+                    <div class="caixa-servicos" id="caixa-servicos2">
+                        <div class="caixinha" id="caixinha2"><img width="64" height="64" src="https://img.icons8.com/ios/50/FFFFFF/shopping-cart--v1.png" alt="shopping-cart--v1"/></div>
+                        
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea et distinctio error voluptas dolor illum ipsa facere labore iste incidunt, ut veritatis voluptate consequatur!</p>
+                    </div>
+        
+                    <div class="caixa-servicos" id="caixa-servicos3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea et distinctio error voluptas dolor illum ipsa facere labore iste incidunt, ut veritatis voluptate consequatur!</p>
+
+                        <div class="caixinha" id="caixinha3"><img width="64" height="64" src="https://img.icons8.com/ios/50/FFFFFF/maintenance--v1.png" alt="maintenance--v1"/></div>
+                    </div>
+                </div>
+            </div>
+
+            
         </section>
         
+        <!--Espaço de separação em branco-->
+        <div class="separacao"></div>
     </main>
     
     <!--Conteudo Rodapé-->
     <footer class="rodape">
-        <section class="conteudo-endereco-contato">
-            <section class="conteudo-endereco-lista">
-                <p class="conteudo-endereco-paragrafo-titulo">Endereço</p>
-                <p class="conteudo-endereco-paragrafo">Edifício Le Monde Office Life</p>
-                <p class="conteudo-endereco-paragrafo">Av. Dr. Mario Guimarães, 428, Centro Nova Iguaçu, RJ - CEP: 26255-230</p>
-            </section>
+        <!--Titulo rodape-->
+        <section class="cabecalho-rodape">
+            <div class="caixa-img">
+                <img src="./assets/img/logo-klamil.png" alt="logo-klamil">
+            </div>
 
-            <section class="conteudo-contato-lista">
-                <p class="conteudo-contato-paragrafo-titulo">Contatos</p>
-                <p class="conteudo-contato-paragrafo">Telefone Escritório: 21 99621-9749</p>
-                <p class="conteudo-contato-paragrafo">Email Escritório: email@gmail.com</p>
-                
-                <section class="conteudo-oab">
-                    <p class="conteudo-oab-paragrafo">REGISTRO OAB: 2654</p>
-                </section>
+            <p>conheça nossa loja</p>
+        </section>
+
+        <!--Endereço-->
+        <section class="endereco">
+            <section class="endereco-caixa">
+                <!-- <img src="" alt=""> -->
+                <div id="img">falta a imagem</div>
+
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.3447902590198!2d-43.6403378505557!3d-22.97308078115921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bf01c2a0f444b%3A0xee305c883d08b4cd!2sAv.%20Carnaubeira%2C%20480%20-%20Guaratiba%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023032-080!5e0!3m2!1spt-BR!2sbr!4v1714412716849!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="endereco-horarios">
+                    <p id="paragrafo1">
+                        Av. Carnaubeira, 480 - Guaratiba RJ, CEP 23032-080
+                    </p>
+                    
+                    <p id="paragrafo2">
+                        De terça a Domingo Das 08H às 18H
+                    </p>
+
+                    <!--pagamentos-->
+                    <p id="paragrafo3">Formas de Pagamentos</p>
+
+                    <img src="./assets/img/logo-cartoes-cortadas.png" alt="logo-cartoes" id="logo-cartoes">
+
+                    <p id="paragrafo4">Preços e condições exclusivas para o site klamil podendo sofrer alterações prêvia sem notificação</p>
+                </div>
             </section>
         </section>
 
-        <section class="conteudo-desenvolvedor">
-            <p class="conteudo-desenvolvedor-paragrafo">Desenvolvido por <a href="https://www.instagram.com/fabio.oliveira92/">Fábio Oliveira</a></p>
+        <!--Atendimento ao cliente-->
+        <section class="atendimento-cliente">
+            
+            <p class="paragrafo" id="paragrafo1">Serviço de atendimento ao cliente</p>
+            
+            <p class="paragrafo" id="paragrafo2">klamilcomercial@gmail.com</p>
+            
+            <p class="paragrafo" id="paragrafo3">21 98875-3709 / 97978-5267</p>
+            
+            <div class="icons">
+                <a href="https://api.whatsapp.com/send?phone=5521978785267"><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+
+                <a href="https://www.instagram.com/autorizada.klamil/"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/></a>
+
+                <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/google-plus.png" alt="google-plus"/></a>
+                
+                <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png" alt="facebook-new"/></a>
+
+                <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/youtube-play.png" alt="youtube-play"/></a>
+
+                <p class="paragrafo" id="paragrafo4">Siga Nossas Redes Sociais</p>
+            </div>
+        </section>
+
+        <!--Plataformas Logo-->
+        <section class="plataformas-logo">
+            <img src="./assets/img/logo-klamil1.png" alt="logo-klamil" id="logo">
+        </section>
+
+        <section class="desenvolvedor">
+            <p class="paragrafo">Desenvolvido por <a href="https://www.linkedin.com/in/devfabiooliveira/">Fábio Oliveira</a>
+            </p>
         </section>
     </footer>
 </body>
