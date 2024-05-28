@@ -133,6 +133,8 @@ left: 7%
 
 
 /*conteudo principal da pagina*/
+
+/*Categorias destacadas*/
 .categorias{
     display: flex;
     flex-direction: column;
