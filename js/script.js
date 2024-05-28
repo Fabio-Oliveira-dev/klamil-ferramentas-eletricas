@@ -1,36 +1,28 @@
-const carrosel_img = document.querySelectorAll('.carrosel-item');
-const carrosel_btn_voltar = document.getElementById('carrosel-btn-voltar');
-const carrosel_btn_avancar = document.getElementById('carrosel-btn-avancar');
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
 
-let carroselSlider = 0;
-
-function removerSlider(){
-    carrosel_img.forEach(item => item.classList.remove('on'))
-}
-
-function mostrarSlider(){
-    carrosel_img[carroselSlider].classList.add('on')
-}
-
-function avancarSlider(){
-    removerSlider()
-    if(carroselSlider === carrosel_img.length -1){
-        carroselSlider = 0
+function showSlide(index) {
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
     } else {
-        carroselSlider++
+        currentIndex = index;
     }
-    mostrarSlider()
+    const offset = -currentIndex * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
 }
 
-function voltarSlider(){
-    removerSlider()
-    if(carroselSlider === 0){
-        carroselSlider = carrosel_img.length -1
-    } else {
-        carroselSlider--
-    }
-    mostrarSlider()
+function nextSlide() {
+    showSlide(currentIndex + 1);
 }
 
-carrosel_btn_avancar.addEventListener('click', avancarSlider);
-carrosel_btn_voltar.addEventListener('click', voltarSlider);
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+setInterval(nextSlide, 5000); // Muda a imagem a cada 3 segundos
+
+// Inicialização
+showSlide(currentIndex);
