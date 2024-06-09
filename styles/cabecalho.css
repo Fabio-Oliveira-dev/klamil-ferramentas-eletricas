@@ -369,7 +369,13 @@ a .seta{
     min-height: 690px;
     background-color: #405040;
 }
-
+.categoria-servicos{
+    object-fit: cover;
+    background-image: url(../assets/img/capa3.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
 .categoria-servicos .img{
     width: 100px;
     height: auto;
@@ -545,6 +551,14 @@ a .seta{
     height: 60px;
 }
 
+.cabecalho-rodape{
+    object-fit: cover;
+    background-image: url(../assets/img/capa3.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+}
+
 .cabecalho-rodape>p{
     font-size: 25px;
     font-weight: 500;
@@ -696,4 +710,3 @@ a .seta{
 .desenvolvedor .paragrafo a:hover{
     color: #404040;
 }
-
