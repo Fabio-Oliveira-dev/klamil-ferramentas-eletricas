@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klamil - Aluguel de Ferramentas Elétricas</title>
+
     <link rel="shortcut icon" href="./assets/img/logo-klamil1.png" type="image/x-icon">
+    
+    <!--Css-->
     <link rel="stylesheet" href="./styles/reset.css">
 
     <link rel="stylesheet" href="./styles/cabecalho.css">
@@ -14,7 +17,7 @@
 
     <script src="./js/script.js" defer></script> -->
 
-    <link rel="stylesheet" href="./styles/media.css">
+    <!-- <link rel="stylesheet" href="./styles/media.css"> -->
     
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,26 +33,26 @@
 
     <meta property="og:image" content="https://fabio-oliveira-dev.github.io/klamil-ferramentas-eletricas/assets/img/logo-klamil.png" />
 
-    <meta property="og:site_name" content="Klamil-Ferramentas Elétricas" />
+    <meta property="og:site_name" content="Klamil-Ferramentas-Elétricas" />
 
 </head>
 <body>
     <!--Conteudo pagina principal inicio-->
     <!--Cabeçalho-->
-    <header class="cabecalho">
+    <header class="cabecalho" id="inicio">
         <!--redes sociais-->
         <section class="redes">
             <p>Siga nossas redes sociais</p>
             <div class="icons">
-                <a href="https://api.whatsapp.com/send?phone=5521978785267"><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/></a>
+                <a id="whatsapp" href=""><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/FFFFFF/whatsapp--v1.png" alt="whatsapp--v1"/></a>
 
-                <a href="https://www.instagram.com/autorizada.klamil/"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/></a>
+                <a id="instagram" href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/instagram-new.png" alt="instagram-new"/></a>
 
-                <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/google-plus.png" alt="google-plus"/></a>
+                <a id="gmail" href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/google-plus.png" alt="google-plus"/></a>
                 
-                <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png" alt="facebook-new"/></a>
+                <a id="facebook" href=""><img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png" alt="facebook-new"/></a>
 
-                <a href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/youtube-play.png" alt="youtube-play"/></a>
+                <a id="youtube" href=""><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/youtube-play.png" alt="youtube-play"/></a>
             </div>
         </section>
 
@@ -58,7 +61,7 @@
         <nav class="menu-principal">
             <section class="ancoras">
                 <a class="menu-principal-texto" href="#">Klamil</a>
-                <a class="menu-principal-texto" href="#">Produtos</a>
+                <a class="menu-principal-texto" href="#categorias">Produtos</a>
                 <a class="menu-principal-texto" href="#">Locação</a>
                 <a class="menu-principal-texto" href="#">Manutenção</a>
                 <a class="menu-principal-texto" href="#">Venda</a>
@@ -211,6 +214,7 @@
         
         <!--Espaço de separação em branco-->
         <div class="separacao"></div>
+        
     </main>
     
     <!--Conteudo Rodapé-->
@@ -284,6 +288,9 @@
             </p>
         </section>
     </footer>
+    
+    <a href="#inicio"><img src="./assets/img/seta.png" alt="seta de rolagem" class="seta"></a>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
